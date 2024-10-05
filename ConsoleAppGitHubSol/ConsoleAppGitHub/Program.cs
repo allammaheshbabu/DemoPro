@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleAppGitHub;
+using System;
 
 namespace MyApp
 {
@@ -11,8 +12,11 @@ namespace MyApp
             a=Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter b value :");
             b = Convert.ToInt32(Console.ReadLine());
-            c = a + b;
+            ArthamaticOperations obj1= new ArthamaticOperations();
+            c=obj1.Add(a, b);
             Console.WriteLine("The sum is "+c);
+            c = obj1.Sub(a, b);
+            Console.WriteLine("The sub is " + c);
             Console.WriteLine("program is complete");
             Console.ReadKey();
             
