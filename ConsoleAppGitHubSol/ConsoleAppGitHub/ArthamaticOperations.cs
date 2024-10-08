@@ -16,5 +16,9 @@ namespace ConsoleAppGitHub
         {
             return x - y;
         }
+        public int Mul(int x, int y)
+        {
+            return x * y;
+        }
     }
 }
